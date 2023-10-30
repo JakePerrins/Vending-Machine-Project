@@ -126,6 +126,8 @@ namespace Vending_Machine_Project
 
                     products[choice - 1] = changeProduct;
 
+                    SaveProducts(products, "ProductData.bin"); // Saving change to file
+
                     Console.Clear(); Console.WriteLine(Title + DisplayProducts(products, false));
 
                     goto RESTART;
